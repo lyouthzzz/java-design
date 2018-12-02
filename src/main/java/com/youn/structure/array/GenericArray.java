@@ -107,7 +107,6 @@ public class GenericArray<T> {
         size--;
         data[size] = null;
         // 缩容
-        // todo
         if (size == data.length / 4 && data.length / 2 != 0) {
             resize(data.length / 2);
         }
@@ -135,7 +134,6 @@ public class GenericArray<T> {
     }
 
     public String toString() {
-        // todo
         StringBuilder builder = new StringBuilder();
         builder.append(String.format("Array Capacity:%d Size:%d [", data.length, size));
         for (int i = 0; i < size; i++) {
